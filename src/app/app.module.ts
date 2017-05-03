@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MaterialModule} from '@angular/material';
-import 'hammerjs';
-
 import { AppComponent } from './app.component';
+import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
+import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoListHeaderComponent,
+    TodoListItemComponent,
+    TodoListComponent
   ],
   imports: [
-    MaterialModule.forRoot(),
-    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpModule
